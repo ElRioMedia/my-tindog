@@ -1,0 +1,235 @@
+/* ---------- THEME SETTINGS ---------- */
+/* Monstarrat and Ubuntu font-family declared in <link> via CDN in HTML <head> */
+/* Font Colours | #8f8f8f and #212529 */
+/* BG Colour | #ef8172 */
+/* Alt BG Colour | #ff4c68 */
+/* Text Colour and Bg colour | #fff #000 */
+/* ---------- GLOBAL STYLES ---------- */
+/* Setting viewport height and width to 100%. Adding Montserrat font across the board.  */
+body {
+  height: 100%;
+  width: 100%;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Font settings for h1 tag */
+/* Using only 1 x <h1> tag in doc, so styling here. No need to give extra id */
+h1 {
+  font-family: 'Montserrat-black', sans-serif;
+}
+
+/* Font settings for h2's */
+h2 {
+  font-family: 'Montserrat-bold', sans-serif;
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+/* Font settings for h3's */
+/* Using font-family to increase weight instead of declaring with font-weight */
+/* Margin top for positioning */
+h3 {
+  font-family: 'Montserrat-bold', sans-serif;
+  font-size: 1.5rem;
+  line-height: 1.2;
+  margin-top: 1rem;
+}
+
+/* Paragraph font colour settings */
+/* Margin bottom removed (BS over-ride.Taken out to centre this section properly */
+p {
+  color: #8f8f8f;
+  margin-bottom: 0;
+}
+
+/* ---------- MODULES ---------- */
+/* selecting only 1 x h1 here */
+.big-heading {
+  font-size: 3.5rem;
+  line-height: 1.5;
+}
+
+.section-heading {
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+.white-container {
+  background-color: #fff;
+  color: #212529;
+}
+
+.coloured-container {
+  background-color: #ff4c68;
+  color: #fff;
+}
+
+.padding {
+  padding: 10% 15%;
+}
+
+/* ---------- TITLE SECTION ---------- */
+#title .coloured-container {
+  padding: 3% 15% 11%;
+}
+
+.logo {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 3rem;
+}
+
+.title-image {
+  transform: rotate(24deg);
+  width: 25%;
+  position: absolute;
+  right: 25%;
+  z-index: 0;
+}
+
+.btn {
+  margin: 5% 3% 5% 0;
+}
+
+/* ---------- FEATURES SECTION ---------- */
+#features {
+  position: relative;
+  z-index: 1;
+}
+
+.icons {
+  color: #ff4c68;
+}
+
+.icons:hover {
+  color: #ef8172;
+}
+
+/* ---------- TESTIMONIALS SECTION ----------  */
+#testimonials {
+  text-align: center;
+}
+
+.carousel-inner {
+  padding-bottom: 0;
+  /* padding: 10% 15%; */
+  /* height: 75vh; */
+}
+
+.testimonial-image {
+  width: 15%;
+  border-radius: 100%;
+  margin: 4rem;
+}
+
+/* ---------- PRESS SECTION ----------  */
+#press {
+  text-align: center;
+  padding: 5%;
+}
+
+.press-images {
+  width: 15%;
+  margin: 0 1rem;
+  /* margin: 1rem 1rem 3rem; */
+}
+
+/* ---------- PRICING SECTION ---------- */
+#pricing {
+  text-align: center;
+}
+
+.card {
+  margin: 0.5rem 0;
+}
+
+.my-cards {
+  margin-top: 5%;
+}
+
+/* ---------- CALL TO ACTION SECTION ---------- */
+#cta {
+  text-align: center;
+}
+
+/* ---------- FOOTER SECTION ---------- */
+#footer {
+  padding: 2.5%;
+  text-align: center;
+}
+
+.footer-icons {
+  color: #8f8f8f;
+  text-decoration: none;
+  padding: 0.5rem;
+}
+
+/* ---------- MOBILE RESPONSIVE ---------- */
+/* Noting BS Media Query Breakpoints */
+
+/* $grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px
+); */
+
+/* `xs` returns only a ruleset and no media query */
+/* ... { ... } */
+
+/* `sm` applies to x-small devices (portrait phones, less than 576px) */
+/* @media (max-width: 575.98px) { ... } */
+
+/* `md` applies to small devices (landscape phones, less than 768px) */
+/* @media (max-width: 767.98px) { ... } */
+
+/* `lg` applies to medium devices (tablets, less than 992px) */
+/* @media (max-width: 991.98px) { ... } */
+
+/* `xl` applies to large devices (desktops, less than 1200px) */
+/* @media (max-width: 1199.98px) { ... } */
+
+/* `xxl` applies to x-large devices (large desktops, less than 1400px) */
+/* @media (max-width: 1399.98px) { ... } */
+
+/* On the course project, the tutor is using 900 and 1028px as breakpoint for
+the media queries. I wonder why they're not the same as the bootstrap defaults...
+looking into this now.  */
+
+/* h1 Text align centre on tablet and mobile */
+/* No need to write 'deg'. Just use '0' */
+
+/* Medium Breakpoints for Ipad */
+@media (max-width: 900px) {
+  #title {
+    text-align: center;
+  }
+
+  .title-image {
+    transform: rotate(0);
+    position: static;
+    width: 50%;
+  }
+}
+
+/* Large Breakpoint for Desktop */
+@media (max-width: 992px) {
+  .stack-fix {
+    margin-top: 1rem;
+  }
+}
+
+/* ---------- NOTES ---------- */
+/* CHECK THIS - NEW SELECTORS */
+/* #title .container-fluid {
+    padding: 3% 15% 7%;
+}
+
+#footer .container-fluid {
+  padding: 2.5%;
+} */
+/* ---------- FOOTER ---------- */
+/* ---------- NOT USING ---------- */
+/* height: 82.5vh; */
+/* overflow: hidden; */
